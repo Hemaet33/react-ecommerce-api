@@ -11,7 +11,7 @@ import cors from 'cors'
 const app = express();
 dotenv.config();
 
-mongoose.connect(process.env.MONGO_URL).then(()=>console.log("Connection successful")).catch((err)=>console.log(err));
+mongoose.connect("mongodb+srv://hemaet33:zairawasim23102000@cluster0.xkg5vl0.mongodb.net/?retryWrites=true&w=majority").then(()=>console.log("Connection successful")).catch((err)=>console.log(err));
 app.use((req, res, next)=>{
   res.header("Access-Control-Allow-Credentials", true);
   next()
