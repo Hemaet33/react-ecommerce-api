@@ -7,7 +7,7 @@ import strpeRoute from './routes/stripe.js';
 import orderRoute from './routes/order.js';
 import authRoute from './routes/auth.js';
 import userRoute from './routes/users.js';
-import cors from 'cors'
+import cors from 'cors';
 const app = express();
 dotenv.config();
 
