@@ -17,7 +17,7 @@ app.use((req, res, next)=>{
   next()
 });
 app.use((req, res, next) => {
-  res.setHeader("Access-Control-Allow-Origin", "http://localhost:5173");
+  res.setHeader("Access-Control-Allow-Origin", "https://hemaet33.github.io");
   res.header(
     "Access-Control-Allow-Headers",
     "Origin, X-Requested-With, Content-Type, Accept"
@@ -28,7 +28,7 @@ app.use((req, res, next) => {
 
 app.use(express.json());
 app.use(cors({
-  origin: "http://localhost:5173",
+  origin: "https://hemaet33.github.io",
   credentials:true
 }));
 
